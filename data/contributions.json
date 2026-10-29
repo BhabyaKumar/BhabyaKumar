@@ -1,6 +1,6 @@
 {
   "username": "BhabyaKumar",
-  "total_contributions": 0,
+  "total_contributions": 17,
   "days": [
     {
       "date": "2025-10-26",
@@ -799,8 +799,8 @@
     },
     {
       "date": "2026-04-03",
-      "count": 0,
-      "level": 4
+      "count": 3,
+      "level": 3
     },
     {
       "date": "2026-04-04",
@@ -819,8 +819,8 @@
     },
     {
       "date": "2026-04-07",
-      "count": 0,
-      "level": 4
+      "count": 3,
+      "level": 3
     },
     {
       "date": "2026-04-08",
@@ -859,8 +859,8 @@
     },
     {
       "date": "2026-04-15",
-      "count": 0,
-      "level": 4
+      "count": 2,
+      "level": 2
     },
     {
       "date": "2026-04-16",
@@ -869,8 +869,8 @@
     },
     {
       "date": "2026-04-17",
-      "count": 0,
-      "level": 2
+      "count": 1,
+      "level": 1
     },
     {
       "date": "2026-04-18",
@@ -889,13 +889,13 @@
     },
     {
       "date": "2026-04-21",
-      "count": 0,
-      "level": 4
+      "count": 2,
+      "level": 2
     },
     {
       "date": "2026-04-22",
-      "count": 0,
-      "level": 2
+      "count": 1,
+      "level": 1
     },
     {
       "date": "2026-04-23",
@@ -1014,8 +1014,8 @@
     },
     {
       "date": "2026-05-16",
-      "count": 0,
-      "level": 2
+      "count": 1,
+      "level": 1
     },
     {
       "date": "2026-05-17",
@@ -1844,7 +1844,7 @@
     },
     {
       "date": "2026-10-29",
-      "count": 0,
+      "count": 4,
       "level": 4
     }
   ]
