@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="220" viewBox="0 0 360 220" role="img" aria-labelledby="title desc">
+  <title id="title">Self-typing terminal avatar</title>
+  <desc id="desc">A generic ASCII avatar appears one row at a time.</desc>
+  <defs>
+    <style>
+      .bg { fill: #0d1117; stroke: #30363d; stroke-width: 1.5; }
+      .mono { fill: #c9d1d9; font: 13px/1.25 Consolas, "Courier New", monospace; }
+      .muted { fill: #8b949e; font: 11px Consolas, "Courier New", monospace; }
+      .accent { fill: #58a6ff; }
+    </style>
+    <clipPath id="row0" clipPathUnits="userSpaceOnUse"><rect x="14" y="49" width="0" height="15"><animate attributeName="width" from="0" to="332" dur="0.55s" begin="0.12s" fill="freeze"/></rect></clipPath>
+    <clipPath id="row1" clipPathUnits="userSpaceOnUse"><rect x="14" y="64" width="0" height="15"><animate attributeName="width" from="0" to="332" dur="0.55s" begin="0.20s" fill="freeze"/></rect></clipPath>
+    <clipPath id="row2" clipPathUnits="userSpaceOnUse"><rect x="14" y="79" width="0" height="15"><animate attributeName="width" from="0" to="332" dur="0.55s" begin="0.28s" fill="freeze"/></rect></clipPath>
+    <clipPath id="row3" clipPathUnits="userSpaceOnUse"><rect x="14" y="94" width="0" height="15"><animate attributeName="width" from="0" to="332" dur="0.55s" begin="0.36s" fill="freeze"/></rect></clipPath>
+    <clipPath id="row4" clipPathUnits="userSpaceOnUse"><rect x="14" y="109" width="0" height="15"><animate attributeName="width" from="0" to="332" dur="0.55s" begin="0.44s" fill="freeze"/></rect></clipPath>
+    <clipPath id="row5" clipPathUnits="userSpaceOnUse"><rect x="14" y="124" width="0" height="15"><animate attributeName="width" from="0" to="332" dur="0.55s" begin="0.52s" fill="freeze"/></rect></clipPath>
+    <clipPath id="row6" clipPathUnits="userSpaceOnUse"><rect x="14" y="139" width="0" height="15"><animate attributeName="width" from="0" to="332" dur="0.55s" begin="0.60s" fill="freeze"/></rect></clipPath>
+    <clipPath id="row7" clipPathUnits="userSpaceOnUse"><rect x="14" y="154" width="0" height="15"><animate attributeName="width" from="0" to="332" dur="0.55s" begin="0.68s" fill="freeze"/></rect></clipPath>
+    <clipPath id="row8" clipPathUnits="userSpaceOnUse"><rect x="14" y="169" width="0" height="15"><animate attributeName="width" from="0" to="332" dur="0.55s" begin="0.76s" fill="freeze"/></rect></clipPath>
+    <clipPath id="row9" clipPathUnits="userSpaceOnUse"><rect x="14" y="184" width="0" height="15"><animate attributeName="width" from="0" to="332" dur="0.55s" begin="0.84s" fill="freeze"/></rect></clipPath>
+  </defs>
+  <rect class="bg" x="0.75" y="0.75" width="358.5" height="218.5" rx="10"/>
+  <circle cx="18" cy="18" r="4" fill="#ff5f56"/>
+  <circle cx="33" cy="18" r="4" fill="#ffbd2e"/>
+  <circle cx="48" cy="18" r="4" fill="#27c93f"/>
+  <text class="muted" x="68" y="22">bhabya@github: ~</text>
+  <text class="mono" x="14" y="41"><tspan class="accent">$</tspan> whoami</text>
+  <g class="mono" xml:space="preserve">
+    <text x="14" y="61" clip-path="url(#row0)">              .-""""-.                              </text>
+    <text x="14" y="76" clip-path="url(#row1)">             /  .--.  \                             </text>
+    <text x="14" y="91" clip-path="url(#row2)">            |  /    \  |                            </text>
+    <text x="14" y="106" clip-path="url(#row3)">            | |  oo  | |                            </text>
+    <text x="14" y="121" clip-path="url(#row4)">            | |  __  | |                            </text>
+    <text x="14" y="136" clip-path="url(#row5)">             \ \____/ /                             </text>
+    <text x="14" y="151" clip-path="url(#row6)">              '.___.'                               </text>
+    <text x="14" y="166" clip-path="url(#row7)">             __/| | |\\__                            </text>
+    <text x="14" y="181" clip-path="url(#row8)">            /___|_|_|___\                            </text>
+    <text x="14" y="196" clip-path="url(#row9)">             /  /   \  \                             </text>
+  </g>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="220" viewBox="0 0 500 220" role="img" aria-labelledby="title desc">
+  <title id="title">Bhabya Kumar profile card</title>
+  <desc id="desc">A terminal-style card with public GitHub profile details.</desc>
+  <style>
+    .panel { fill: #0d1117; stroke: #30363d; stroke-width: 1.5; }
+    .bar { fill: #161b22; }
+    .title { fill: #c9d1d9; font: 13px Consolas, "Courier New", monospace; }
+    .key { fill: #79c0ff; font: 13px Consolas, "Courier New", monospace; }
+    .value { fill: #c9d1d9; font: 13px Consolas, "Courier New", monospace; }
+    .subtle { fill: #8b949e; font: 11px Consolas, "Courier New", monospace; }
+    .row { opacity: 0; animation: enter .42s ease-out forwards; }
+    .r1 { animation-delay: .18s; } .r2 { animation-delay: .34s; }
+    .r3 { animation-delay: .50s; } .r4 { animation-delay: .66s; }
+    .r5 { animation-delay: .82s; } .r6 { animation-delay: .98s; }
+    @keyframes enter { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+    @media (prefers-reduced-motion: reduce) { .row { animation: none; opacity: 1; } }
+  </style>
+  <rect class="panel" x=".75" y=".75" width="498.5" height="218.5" rx="10"/>
+  <path class="bar" d="M11 .75h478.5a10 10 0 0 1 10 10v27H.75v-27a10 10 0 0 1 10-10z"/>
+  <circle cx="18" cy="19" r="4" fill="#ff5f56"/>
+  <circle cx="33" cy="19" r="4" fill="#ffbd2e"/>
+  <circle cx="48" cy="19" r="4" fill="#27c93f"/>
+  <text class="title" x="70" y="23">bhabya@github — profile</text>
+  <text class="subtle" x="20" y="61">PROFILE CARD</text>
+  <g class="row r1"><text class="key" x="20" y="87">Name</text><text class="value" x="145" y="87">Bhabya Kumar Lal</text></g>
+  <g class="row r2"><text class="key" x="20" y="111">GitHub</text><text class="value" x="145" y="111">@BhabyaKumar</text></g>
+  <g class="row r3"><text class="key" x="20" y="135">Languages</text><text class="value" x="145" y="135">HTML · JavaScript</text></g>
+  <g class="row r4"><text class="key" x="20" y="159">Public repos</text><text class="value" x="145" y="159">2</text></g>
+  <g class="row r5"><text class="key" x="20" y="183">Project</text><text class="value" x="145" y="183">DressMate-AI</text></g>
+  <g class="row r6"><text class="key" x="20" y="207">Project</text><text class="value" x="145" y="207">Word-Counter</text></g>
+</svg>
