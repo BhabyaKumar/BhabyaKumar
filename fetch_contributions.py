@@ -15,11 +15,15 @@ OUTPUT = ROOT / "data" / "contributions.json"
 URL = f"https://github.com/users/{USERNAME}/contributions"
 
 
-def contribution_count(node) -> int:
+def contribution_count(node, tooltip_counts: dict[str, int]) -> int:
     for attr in ("data-count", "data-contribution-count"):
         value = node.get(attr)
         if value and value.isdigit():
             return int(value)
+
+    cell_id = node.get("id", "")
+    if cell_id in tooltip_counts:
+        return tooltip_counts[cell_id]
 
     text = " ".join(
         part
@@ -43,6 +47,24 @@ def main() -> None:
     response.raise_for_status()
 
     soup = BeautifulSoup(response.text, "html.parser")
+    tooltip_counts = {}
+    for tooltip in soup.find_all("tool-tip", attrs={"for": True}):
+        tooltip_text = " ".join(
+            part
+            for part in (
+                tooltip.get("aria-label", ""),
+                tooltip.get_text(" ", strip=True),
+            )
+            if part
+        )
+        match = re.search(
+            r"(\d[\d,]*)\s+contributions?\b", tooltip_text, re.IGNORECASE
+        )
+        if match:
+            tooltip_counts[tooltip.get("for", "")] = int(
+                match.group(1).replace(",", "")
+            )
+
     days = []
     seen = set()
     for node in soup.select("[data-date][data-level]"):
@@ -54,7 +76,12 @@ def main() -> None:
             level = max(0, min(4, int(node.get("data-level", "0"))))
         except ValueError:
             level = 0
-        days.append({"date": day, "count": contribution_count(node), "level": level})
+        count = contribution_count(node, tooltip_counts)
+        if level > 0 and node.get("id", "") not in tooltip_counts:
+            raise RuntimeError(
+                f"Missing contribution tooltip for active day {day}; refusing to save zeros."
+            )
+        days.append({"date": day, "count": count, "level": level})
 
     if not days:
         raise RuntimeError(
